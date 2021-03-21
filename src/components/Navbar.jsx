@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const handleLogoClick = () => {
     setSearchTerm("")
-    const retrievedCocktails = fetchDrinks()
+    fetchDrinks()
   }
 
   return (

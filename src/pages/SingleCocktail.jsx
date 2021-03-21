@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import Loading from "../components/Loading.jsx"
 import { useParams } from "react-router-dom"
-import { formatDrinkInstructions } from "../util/utils.js"
+
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i="
 
 // not using context here. setting up all functionality here

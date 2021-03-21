@@ -179,6 +179,12 @@ Navbar
 .main-logo:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 500px) {
+ .nav-links {
+   display: block;
+ }
+}
 /* 
 ====== 
 About
@@ -280,10 +286,11 @@ Cocktail
 
 .cocktail {
   background: var(--secondaryBackground);
+  /* here be the grid business */
   display: grid;
   grid-template-rows: 1fr;
-  transition: all 0.3s ease;
   opacity: 0.75;
+  transition: all 0.3s ease;
 }
 .cocktail:hover {
   background-color: var(--primaryYellow);
@@ -338,7 +345,7 @@ Form
   padding-bottom: 0;
 }
 .search-form {
-  width: var(--fullWidth);
+  width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--maxWidth);
   padding: 2rem 2.5rem;
@@ -394,6 +401,10 @@ Cocktail
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
   color: var(--offWhite);
+}
+
+.instructions {
+  text-transform: none;
 }
 
 .drink-info {
