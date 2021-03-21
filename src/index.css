@@ -280,16 +280,15 @@ Cocktail
 
 .cocktail {
   background: var(--secondaryBackground);
-  /* here be the grid business */
   display: grid;
   grid-template-rows: 1fr;
-  opacity: 0.75;
   transition: all 0.3s ease;
+  opacity: 0.75;
 }
 .cocktail:hover {
   background-color: var(--primaryYellow);
   box-shadow: var(--lightShadow);
-  transform: opacity 1;
+  opacity: 1;
 }
 
 /* image zoom handling */
@@ -395,10 +394,6 @@ Cocktail
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
   color: var(--offWhite);
-}
-
-.instructions {
-  text-transform: none;
 }
 
 .drink-info {
