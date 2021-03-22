@@ -227,6 +227,14 @@ About
   margin-top: 1rem;
 }
 
+.about-btn-container {
+  max-width: inherit;
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 /* 
 ====== 
 Error

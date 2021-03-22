@@ -20,13 +20,22 @@ const About = () => {
           to submit artist info and have that sent over to the back end thru
           REST and persisted in... probably MongoDB.
         </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="http://thecocktaildb.com"
-          className="btn-primary">
-          the real cocktailDB
-        </a>
+        <article className="about-btn-container">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="httpw:www.github.com/adiforka/cocktaildb-adapted"
+            className="btn-primary">
+            source code
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://thecocktaildb.com"
+            className="btn-primary">
+            the real cocktailDB
+          </a>
+        </article>
       </section>
     </div>
   )
