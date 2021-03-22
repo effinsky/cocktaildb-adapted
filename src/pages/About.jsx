@@ -24,7 +24,7 @@ const About = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="httpw:www.github.com/adiforka/cocktaildb-adapted"
+            href="https://github.com/adiforka/cocktaildb-adapted"
             className="btn-primary">
             source code
           </a>
