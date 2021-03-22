@@ -71,7 +71,7 @@ a {
 }
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* 
@@ -321,6 +321,7 @@ Cocktail
 /* image zoom handling to make sure the img stays within the container when zoomed*/
 .cocktail .img-container {
   overflow: hidden;
+
 }
 
 .cocktail-footer {
