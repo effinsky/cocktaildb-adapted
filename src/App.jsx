@@ -10,28 +10,17 @@ import Navbar from "./components/Navbar.jsx"
 
 function App() {
   return (
-    <div>
-      {/* app wrapped in router */}
+    <>
       <Router>
-        {/* navbar shown on all pages */}
         <Navbar />
-        {/* routes wrapped in switch */}
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/cocktail/:id">
-            <SingleCocktail />
-          </Route>
-          <Route exact path="/*">
-            <Error />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/cocktail/:id" component={SingleCocktail} />
+          <Route exact path="/*" component={Error} />
         </Switch>
       </Router>
-    </div>
+    </>
   )
 }
 
