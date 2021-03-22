@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Loading from "../components/Loading.jsx"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i="
 
@@ -39,7 +39,9 @@ const SingleCocktail = () => {
             instructions
           }
 
-          // also grab the ingredients as object keys
+          // also grab the ingredients as object keys (we'er getting an object with
+          //a large--or in other cases perhaps unknown number of ingredients that someone
+          // didn't want to put in an array)
           const ingredients = []
           for (const key in data.drinks[0]) {
             console.log(key)
@@ -118,6 +120,10 @@ const SingleCocktail = () => {
             </p>
           </div>
         </div>
+        {/* link back to all drinks */}
+        <Link to={"/"}>
+          <button className="btn-primary btn-margin">other drinks</button>
+        </Link>
       </section>
     </div>
   )

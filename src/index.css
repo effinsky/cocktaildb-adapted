@@ -21,6 +21,7 @@ Variables
   --darkGrey: #afafaf;
   --mainTransition: all 0.2s linear;
   --mainSpacing: 0.3rem;
+  --midMargin: 3rem;
   --lightShadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.2);
   --mainBorderRadius: 0.25rem;
   --secondaryBorderRadius: 0.2rem;
@@ -69,12 +70,18 @@ a {
   color: var(--mainBlack);
 }
 img {
-  width: 90%;
-  /* display: block; */
+  width: 100%;
+  height: auto;
 }
+
+/* 
+======
+Pages
+======
+*/
 .page-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: var(--secondaryBackground);
 }
 
@@ -120,6 +127,9 @@ Buttons
   margin: 0 auto;
   box-shadow: var(--lightShadow);
   text-align: center;
+}
+.btn-margin {
+  margin: var(--midMargin);
 }
 .btn-more {
   padding: 0.25rem 0.4rem;
@@ -181,9 +191,9 @@ Navbar
 }
 
 @media screen and (max-width: 500px) {
- .nav-links {
-   display: block;
- }
+  .nav-links {
+    display: block;
+  }
 }
 /* 
 ====== 
@@ -298,24 +308,19 @@ Cocktail
   opacity: 1;
 }
 
-/* image zoom handling */
-.img-container {
-  display: grid;
-  /* grid-template: 1fr 1fr; */
-  /* align-items: center;
-  justify-content: center; */
-  overflow: hidden;
-}
-
 .cocktail img {
   transition: transform 0.3s ease;
-  /* object-fit: cover; */
   border-top-left-radius: var(--secondaryBorderRadius);
   border-top-right-radius: var(--secondaryBorderRadius);
 }
 
 .cocktail img:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
+}
+
+/* image zoom handling to make sure the img stays within the container when zoomed*/
+.cocktail .img-container {
+  overflow: hidden;
 }
 
 .cocktail-footer {
