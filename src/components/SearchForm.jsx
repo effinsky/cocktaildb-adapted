@@ -4,8 +4,8 @@ import { useGlobalContext } from "../context"
 const SearchForm = () => {
   const { setSearchTerm, cocktails } = useGlobalContext()
   const searchInput = useRef("")
+  
   // makes it so that when the app renders, the focus is set to the input
-
   useEffect(() => {
     searchInput.current.focus()
   })
